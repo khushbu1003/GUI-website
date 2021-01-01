@@ -1,0 +1,196 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background: rgb(238, 231, 231);
+
+}
+.container{
+    width: 800px;
+    height:600px;
+    margin: 50px left;
+   
+    padding: 40px;
+   
+}
+
+.container p{
+    text-transform: uppercase;
+    text-align:left;
+    font-size: 45px;
+    margin-bottom: 20px;
+    
+    letter-spacing:1px
+}
+.input, .msg .area{
+    width: 25%;
+    padding: 2opx;
+    box-sizing:border-box;
+    margin-bottom: 25px;
+    border: 2px solid #ee99ee
+    font-size 14px;
+    border-radius: 5px;
+    outline:none;
+    transition: all 0.5s ease;
+
+}
+
+
+
+
+
+
+.btn{
+    width: 200px;
+    background:#486225
+    height 50px;
+    text-align: left;
+    line-height: 50px;
+    color: #486225
+    text-transform uppercase;
+    margin: 0 left;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.wrapper{
+    width: 100vw;
+    height:100vh;
+    background: radial-gradient(farthest-corner at 30vw 20vh #7397a1 1% #3f2c41 100%)
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    opacity: 0.9;
+    height: 60px;
+    left: 0px;
+    font-size: 40px;
+    outline-color: rgb(173,119,119);
+    text-align: center;
+    color: rgb(173, 119, 119);
+    background: url("logo_small.png") #f7f5f5 20px no-repeat;
+    background-size: 50px;
+    font-family: 'sans-serif';
+    z-index: 1;
+
+}
+.navbar span{
+    position: relative;
+    color: rgb(173, 119, 119)
+    top 15px;
+    
+}
+
+
+
+
+.section{
+    background: rgb(214, 204, 204);
+    margin-top: 100px;
+    height: 360px;
+    overflow: hidden;
+    border-bottom: 10px solid rgb(190, 66, 132);
+}
+
+.flower{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    float: left;
+    z-index: 1;
+    margin-left: 35px;
+     
+
+}
+
+.flower.flower-pink{
+    height: 80px;
+    width: 80px;
+    background: rgba(196,49,171,0.8);
+    border-radius: 50%;
+    border: 2px solid rgba(196,49,171,0.8);
+    box-shadow: 0 0 0 10px rgba(255, 137, 235, 0.8), 0 0 0 10px rgba(196,49,171,0.8)inset;
+    z-index:1;
+}
+
+.flower.flower-purple{
+    height: 80px;
+    width: 80px;
+    background: rgba(101, 35, 163, 0.356);
+    border-radius: 50%;
+    border: 2px solid rgba(101, 35, 163, 0.356);
+    box-shadow: 0 0 0 10px rgba(101, 35, 163, 0.356), 0 0 0 10px rgba(101, 35, 163, 0.356)inset;
+    z-index:1;
+}
+.flower.flower-red{
+    height: 80px;
+    width: 80px;
+    background: rgba(196, 49, 56, 0.8);
+    border-radius: 50%;
+    border: 2px solidrgba(196, 49, 56, 0.8);
+    box-shadow: 0 0 0 10px rgba(196, 49, 56, 0.8), 0 0 0 10px rgba(196, 49, 56, 0.8)inset;
+    z-index:1;
+}
+
+.flower span{
+    background: rgba(137, 163, 19, 0.8);
+    width: 10px;
+    height: 250px;
+    display: block;
+    position:relative;
+    left: 36px;
+    top: 90px;
+}
+
+.flower span:before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: rgba(137,163,19,0.6);
+    border-radius: 0 25px 0 25px;
+    position: absolute;
+    left: -47px;
+    top:70px;
+    box-shadow: 0 0 0 5px rgba(137,163,19,0.6)inset;
+    transform: rotateY(140deg);
+    animation: flip-left 5s infinite linear;
+    
+}
+
+
+.flower span:after{
+ content: '';
+ width: 50px;
+ height: 50px;
+ display:block;
+ background: rgba(137,163,19,0.6);
+ border-radius: 0 25px 0 25px; 
+ position: absolute;
+ top:10px; 
+ left: 5px;
+ transform: rotateY(-140deg);
+ animation: flip-left 5s infinite linear;
+
+}
+
+@keyframes flip-left{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+
+    50%
+    {
+        transform: rotateY(180deg);
+    }
+    100%
+    {
+        transform: rotateY(0deg);
+    }
+
+
+}
+
